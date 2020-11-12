@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-4/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="responsive_template.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Pranay</title>
+</head>
+<body>
+<div id="backdrop"></div>
+<div class="cal">
+        
+        <div class="container-fluid">
+        <div class="header d-flex flex-row">
+            <div class=" col-sm-12 col-md-5" style="cursor:pointer;">
+                <h1>Landing</h1>
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <div class="nav">
+                    <ul>
+                        <a href="https://msingermany.co.in/top-7-universities-automotive-engineering-germany/"><li>Home</li></a>
+                        <a href="#"><li id="visible" class="visible">Features</li></a>
+                        <a href="#"><li id="visible1">Reviews</li></a>
+                        <li>FAQ</li>
+                        <li><button type="submit" placeholder="Get Started" id="get">Get Started</button></li>          
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    <div class="popup" >      
+        <div class="redo" id="redo">
+            <p>WordPress combines simplicity for users and publishers with under-the-hood complexity for developers. This makes it flexible while still being easy-to-use. The following is a list of some of the features that come as standard with WordPress; however, there are literally thousands of plugins that extend what WordPress does, so the actual functionality is nearly limitless. You are also free to do whatever you like with the WordPress code, extend it or modify in any way or use it for commercial projects without any licensing fees. That is the beauty of free software, free refers not only to price but also the freedom to have complete control over it.</p>
+            <div class="t_n"><button>CLOSE</button></div>
+        </div>      
+    </div>
+    <div class="second_popup">
+        <div class="redo1" id="redo1">
+            <h3>Add a rating or review</h3>
+            <span>Notes:</span>                
+            <p> Google uses automated spam detection measures to remove reviews that are probably spam. 
+                Google has no tolerance for fake reviews. We may take down any review that we think is fake or that doesn’t follow Google's review policies.
+                1. On your computer, open Google Maps and make sure you're signed in.
+                2. Search for a place.
+                3. On the left, scroll down and click Write a review.
+                4. In the window that appears, click the stars to score the place. You can also write a review.
+                Your review will be visible in Google Maps until you take it down. After your review is published, 
+                you can edit what you wrote, or change the rating and pictures you included. </p>
+                <button class="ok" id="ok">OK</button>
+        </div>
+    </div>
+    <div class="last_popup" id="last_popup">
+        <img  src="exclamation-triangle-solid.svg" rel = "exclamitery">
+        <h2>You have to notice </h2> 
+        <h2>It,s a Clone Page</h2> 
+        <img class="times" src="times-solid.svg" rel="cross" style="width : 50px; height : 50px;margin-top : 12px; cursor:pointer">
+        <p>Press this to close</p>
+    </div>
+        
+    <div class="container-fluid">
+        <div class="data">
+            <div class="col-md-4 col-sm-12  col-xs-12 offset-2">
+                    <h2>Fly makes you</h2>
+                    <h2>faster</h2>
+                    <span><p>New temmplate by uicookie.com.
+                            For more templates visit the site.There you can choose 
+                            your desired templates, so kindley visit the page.
+                    </p></span>
+                    <div class="price">
+                        <button class="tag" id="tag">SEE PRICING</button>
+                    </div>
+                    <!-- Siblings for "SEE PRICING" tag -->
+                        <div class="popup3" id="popup3">
+                            <h1>$9.56</h1>
+                            <p>It is just for you!</p>
+                            <button class="buy" id="buy">BUY</button>
+                        </div> 
+                        <div id="popup4">
+                            <h1>Thank You !!</h1>
+                            <button id="close" class="close">OK</button>
+                        </div>
+            </div>
+
+            <div class="info float-right">
+                <form>
+                    <h2>Sign Up for Free</h2> 
+                    <input type="text" class="box" placeholder="Full name" required><br>
+                    <input type="email" class="box" placeholder="Email" required><br>
+                    <input type="password" class="box" placeholder="Passcode" required><br>
+                    <select class="box" placeholder="Select"> 
+                                <option>Select</option>
+                                <option>male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                                                    </select><br>
+                    <button type="button" class="dive_into" onclick="facebook()">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+        document.getElementById("visible").addEventListener("click",function(){
+            document.getElementById("redo").style.display="block";
+            document.getElementById("backdrop").style.display="block";
+        })
+        document.querySelector(".t_n").addEventListener("click",function(){
+            document.getElementById("redo").style.display="none";
+            document.getElementById("backdrop").style.display="none";
+        })
+
+</script>
+<script>
+    document.getElementById("get").addEventListener("click",function(){
+        document.getElementById("last_popup").style.display="block";
+        document.getElementById("backdrop").style.display="block";
+    })
+    document.querySelector(".last_popup").addEventListener("click",function(){
+        document.getElementById("last_popup").style.display="none";
+        document.getElementById("backdrop").style.display="none";
+    })
+</script>
+<script>
+    document.getElementById("visible1").addEventListener("click",function(){
+        document.getElementById("redo1").style.display="block";
+        document.getElementById("backdrop").style.display="block";
+    })
+    document.querySelector(".ok").addEventListener("click", function(){
+        document.getElementById("redo1").style.display="none";
+        document.getElementById("backdrop").style.display="none";
+    })
+</script>
+<script>
+        document.getElementById("tag").addEventListener("click",function(){
+        document.getElementById("popup3").style.display="block";
+        document.getElementById("backdrop").style.display="block";
+    })
+    document.querySelector(".buy").addEventListener("click", function(){
+        document.getElementById("popup3").style.display="none";
+        document.getElementById("popup4").style.display="block";
+        
+    })
+    document.querySelector(".close").addEventListener("click",function(){
+        document.getElementById("popup4").style.display="none";
+        document.getElementById("backdrop").style.display="none";
+        
+    })
+</script>
+<script>
+    function facebook(){
+        document.getElementById("backdrop").style.display="block";
+        let r= confirm("you will redirect to facebook page");
+        if (r===true){
+            result = window.open("https://www.facebook.com/");
+        }
+        else{
+
+        }
+        document.getElementById("backdrop").style.display="none";
+    }
+    
+</script>
+ <script src="bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+
+
